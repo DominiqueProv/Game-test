@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale-1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Test Game</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <script
+      src="https://kit.fontawesome.com/b56c8a18e1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Welcome to the greatest game on earth!<br />Rock, Paper, Scissor!</h1>
+    </div>
+    <div class="mainWrapper">
+      <h4 id="result" class="result-display"></h4>
+
+      <h2 id="start-title">Pick a weapon</h2>
+      <ul class="selection">
+        <li id="rock" onclick="play(this)">
+          <i class="far fa-hand-rock fa-5x"></i>
+        </li>
+        <li id="paper" onclick="play(this)">
+          <i class="far fa-hand-paper fa-5x"></i>
+        </li>
+        <li id="scissor" onclick="play(this)">
+          <i class="far fa-hand-scissors fa-5x"></i>
+        </li>
+      </ul>
+      <div>
+        <p id="event"><span></span></p>
+      </div>
+      <div class="score-board">
+        <div class="user">
+          <div class="wrapper-flex">
+            <div>
+              <i class="fas fa-user fa-3x"></i>
+            </div>
+            <div>
+              <p>Player 1</p>
+            </div>
+          </div>
+          <i class="fas fa-heart fa-2x"></i>
+          <i class="fas fa-heart fa-2x"></i>
+          <i class="fas fa-heart fa-2x"></i>
+        </div>
+
+        <div class="computer">
+          <div class="wrapper-flex">
+            <div>
+              <i class="fas fa-robot fa-3x"></i>
+            </div>
+            <div>
+              <p id="robot">Random</p>
+            </div>
+          </div>
+          <i class="fas fa-heart fa-2x"></i>
+          <i class="fas fa-heart fa-2x"></i>
+          <i class="fas fa-heart fa-2x"></i>
+        </div>
+      </div>
+
+      <button id="switch" class="button-switch" onclick="switchComputer()">
+        Switch Computer player
+      </button>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
